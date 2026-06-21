@@ -18,6 +18,6 @@ __all__ = [
     "reverse_string",
     "word_count",
     "shout",
-    
+
 ]
 __version__ = "0.2.0"

@@ -42,6 +42,7 @@ def modulo(a: float, b: float) -> float:
         raise ValueError("Cannot compute modulo with divisor zero")
     return a % b
 
+
 def square(n: float) -> float:
     """Return n squared."""
     return n ** 2

@@ -47,6 +47,7 @@ def test_modulo_by_zero_raises():
     with pytest.raises(ValueError):
         modulo(10, 0)
 
+
 def test_square():
     assert square(4) == 16
     assert square(-3) == 9
