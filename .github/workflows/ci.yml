@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [master, main]
   pull_request:
-    branches: [ master, main ]
+    branches: [master, main]
 
 jobs:
   build-and-test:
@@ -40,7 +40,7 @@ jobs:
         if: always()
         run: |
           if [ "${{ job.status }}" == "success" ]; then
-            echo "✅ Build passed on Python ${{ matrix.python-version }}"
+            echo "Build passed on Python ${{ matrix.python-version }}"
           else
-            echo "❌ Build failed on Python ${{ matrix.python-version }}"
+            echo "Build failed on Python ${{ matrix.python-version }}"
           fi
