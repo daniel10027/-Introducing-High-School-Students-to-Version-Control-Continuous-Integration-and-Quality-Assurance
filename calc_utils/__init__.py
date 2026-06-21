@@ -3,7 +3,7 @@
 A learning project for practicing Git, CI, and QA workflows.
 """
 
-from .operations import add, subtract, multiply, divide, power, modulo, sqaure
+from .operations import add, subtract, multiply, divide, power, modulo, square
 from .string_utils import is_palindrome, reverse_string, word_count, shout
 
 __all__ = [
@@ -13,11 +13,10 @@ __all__ = [
     "divide",
     "power",
     "modulo",
-    "sqaure",
+    "square",
     "is_palindrome",
     "reverse_string",
     "word_count",
     "shout",
-
 ]
 __version__ = "0.2.0"
