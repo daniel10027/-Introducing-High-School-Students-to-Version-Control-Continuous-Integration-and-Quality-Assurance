@@ -2,7 +2,7 @@
 
 import pytest
 
-from calc_utils.operations import add, subtract, multiply, divide, power, modulo
+from calc_utils.operations import add, subtract, multiply, divide, power, modulo, square
 
 
 def test_add():
@@ -46,3 +46,8 @@ def test_modulo():
 def test_modulo_by_zero_raises():
     with pytest.raises(ValueError):
         modulo(10, 0)
+
+
+def test_square():
+    assert square(4) == 16
+    assert square(-3) == 9
